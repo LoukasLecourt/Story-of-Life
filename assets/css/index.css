@@ -1,0 +1,36 @@
+body {
+    background-color: #262d39;;
+}
+#title {
+    margin-top: 3%;
+    margin-left: 37%;
+    color: rgb(75, 145, 236);
+    text-decoration: underline red;
+}
+#diapo {
+    height: 400px;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+#page {
+    margin-top: 3%;
+    margin-left: 40%;
+    color: yellow;
+}
+#dream {
+    color: whitesmoke;
+}
+button {
+    padding: 5px 10px;
+    border: none;
+    color: whitesmoke;
+}
+#down {
+    margin-left: 40%;
+    background: red;
+}
+#up {
+    margin-left: 2%;
+    background: green;
+}

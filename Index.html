@@ -1,0 +1,45 @@
+<!DOCTYPE html 5.0>
+<html>
+
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="assets/css/index.css" type="text/css" />
+        <title>L'Histoire D'une Vie</title>
+        <script>
+            var numero = 0;
+            
+            function dream() {
+                var number = numero;
+                document.getElementById("dream").innerHTML = number;
+                changerDiapo();
+            };
+            function initElement() {
+                var up = document.getElementById("up");
+                up.onclick = onTop;
+                var down = document.getElementById("down");
+                down.onclick = below;
+            };
+            function onTop(){
+                numero += 1;
+                dream();
+            };
+            function below(){
+                numero -= 1;
+                if (numero <= 0) numero = 0;
+                dream();
+            };
+            function changerDiapo(){
+                document.getElementById('diapo').src="page"+numero+".html";
+            };
+        </script>
+    </head>
+
+    <body onload="initElement(); dream(); changerDiapo();"> 
+        <h1 id="title">L'histoire d'une vie</h1>
+        <iframe id="diapo" src="page0.html"></iframe>
+        <h2 id="page">Page numéro : <span id="dream"></span></h2>
+        <button id="down" onclick="changerDiapo()" >Précédent</button>
+        <button id="up" onclick="changerDiapo()" >Prochain</button>  
+    </body>
+</html>

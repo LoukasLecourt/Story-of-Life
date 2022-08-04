@@ -1,0 +1,13 @@
+body {
+    background-color: #262d39;;
+}
+p {
+    color: whitesmoke;
+    padding-left: 10%;
+}
+span {
+    color: rgb(83, 228, 85);
+}
+#circle {
+    color: yellow;
+}
