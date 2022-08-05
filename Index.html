@@ -30,14 +30,14 @@
                 dream();
             };
             function changerDiapo(){
-                document.getElementById('diapo').src="page"+numero+".html";
+                document.getElementById('diapo').src="pages/page"+numero+".html";
             };
         </script>
     </head>
 
     <body onload="initElement(); dream(); changerDiapo();"> 
         <h1 id="title">L'histoire d'une Vie</h1>
-        <iframe id="diapo" src="page0.html"></iframe>
+        <iframe id="diapo" src="pages/page0.html"></iframe>
         <h2 id="page">Page numéro : <span id="dream"></span></h2>
         <button id="down" onclick="changerDiapo()" >Précédent</button>
         <button id="up" onclick="changerDiapo()" >Prochain</button>  
